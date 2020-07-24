@@ -538,11 +538,11 @@ THE SOFTWARE.
       <artifactId>access-modifier-annotation</artifactId>
     </dependency>
 
-    <dependency>
+    <!--dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>
       <optional>true</optional>
-    </dependency>
+    </dependency-->
     <dependency>
       <groupId>net.jcip</groupId>
       <artifactId>jcip-annotations</artifactId>
