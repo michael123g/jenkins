@@ -537,12 +537,7 @@ THE SOFTWARE.
       <groupId>org.kohsuke</groupId>
       <artifactId>access-modifier-annotation</artifactId>
     </dependency>
-
-    <!--dependency>
-      <groupId>com.github.spotbugs</groupId>
-      <artifactId>spotbugs-annotations</artifactId>
-      <optional>true</optional>
-    </dependency-->
+  
     <dependency>
       <groupId>net.jcip</groupId>
       <artifactId>jcip-annotations</artifactId>
@@ -826,14 +821,7 @@ THE SOFTWARE.
           </plugin>
         </plugins>
       </build>
-    </profile>
-    <!--profile>
-      
-      <id>spotbugs</id>
-      <properties>        
-        <findbugs.failOnError>true</findbugs.failOnError>
-      </properties>
-    </profile-->
+    </profile>    
     <profile>
       <id>all-tests</id>
       <activation>
