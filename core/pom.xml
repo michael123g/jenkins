@@ -827,15 +827,13 @@ THE SOFTWARE.
         </plugins>
       </build>
     </profile>
-    <profile>
-      <!-- Run SpotBugs for better error detection. Run as "mvn -Pspotbugs install site". -->
-      <!-- SpotBugs has been moved to the default build flow, but here we fail the build on errors-->
+    <!--profile>
+      
       <id>spotbugs</id>
-      <properties>
-        <!-- In the default profile we always fail the build if there SpotBugs errors -->
+      <properties>        
         <findbugs.failOnError>true</findbugs.failOnError>
       </properties>
-    </profile>
+    </profile-->
     <profile>
       <id>all-tests</id>
       <activation>
