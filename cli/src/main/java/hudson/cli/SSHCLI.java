@@ -51,7 +51,7 @@ import org.apache.sshd.common.util.io.NoCloseInputStream;
 import org.apache.sshd.common.util.io.NoCloseOutputStream;
 import org.apache.sshd.common.util.security.SecurityUtils;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+//import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
  * Implements SSH connection mode of {@link CLI}.
@@ -130,7 +130,7 @@ class SSHCLI {
         }
     }
 
-    @SuppressFBWarnings(value = "URLCONNECTION_SSRF_FD", justification = "Client-side code doesn't involve SSRF.")
+    //@SuppressFBWarnings(value = "URLCONNECTION_SSRF_FD", justification = "Client-side code doesn't involve SSRF.")
     private static URLConnection openConnection(URL url) throws IOException {
         return url.openConnection();
     }
