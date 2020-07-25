@@ -23,7 +23,7 @@
  */
 package hudson.cli;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+//import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.cli.client.Messages;
 import java.io.DataInputStream;
 import javax.net.ssl.HostnameVerifier;
@@ -177,7 +177,7 @@ public class CLI {
                 HttpsURLConnection.setDefaultSSLSocketFactory(context.getSocketFactory());
                 // bypass host name check, too.
                 HttpsURLConnection.setDefaultHostnameVerifier(new HostnameVerifier() {
-                    @SuppressFBWarnings(value = "WEAK_HOSTNAME_VERIFIER", justification = "User set parameter to skip verifier.")
+                    //@SuppressFBWarnings(value = "WEAK_HOSTNAME_VERIFIER", justification = "User set parameter to skip verifier.")
                     public boolean verify(String s, SSLSession sslSession) {
                         return true;
                     }
@@ -319,12 +319,12 @@ public class CLI {
         throw new AssertionError();
     }
 
-    @SuppressFBWarnings(value = {"PATH_TRAVERSAL_IN", "URLCONNECTION_SSRF_FD"}, justification = "User provided values for running the program.")
+    //@SuppressFBWarnings(value = {"PATH_TRAVERSAL_IN", "URLCONNECTION_SSRF_FD"}, justification = "User provided values for running the program.")
     private static String readAuthFromFile(String auth) throws IOException {
         return FileUtils.readFileToString(new File(auth.substring(1)), Charset.defaultCharset());
     }
 
-    @SuppressFBWarnings(value = {"PATH_TRAVERSAL_IN", "URLCONNECTION_SSRF_FD"}, justification = "User provided values for running the program.")
+    //@SuppressFBWarnings(value = {"PATH_TRAVERSAL_IN", "URLCONNECTION_SSRF_FD"}, justification = "User provided values for running the program.")
     private static File getFileFromArguments(List<String> args) {
         return new File(args.get(1));
     }
