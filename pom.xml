@@ -406,14 +406,7 @@ THE SOFTWARE.
         <plugin>
 	        <groupId>org.codehaus.mojo</groupId>
 	        <artifactId>animal-sniffer-maven-plugin</artifactId>
-        </plugin>
-        <!--plugin>
-          <groupId>com.github.spotbugs</groupId>
-          <artifactId>spotbugs-maven-plugin</artifactId>
-          <configuration>
-            <maxHeap>768</maxHeap>
-          </configuration>
-        </plugin-->
+        </plugin>        
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
@@ -550,14 +543,7 @@ THE SOFTWARE.
     <profile>
       <id>metrics</id>
       <build>
-        <plugins>
-          <!--plugin>
-            <groupId>com.github.spotbugs</groupId>
-            <artifactId>spotbugs-maven-plugin</artifactId>
-            <configuration>
-              <threshold>High</threshold>
-            </configuration>
-          </plugin-->
+        <plugins>          
         </plugins>
       </build>
     </profile>
