@@ -184,7 +184,12 @@ THE SOFTWARE.
    <scope>system</scope>
    <systemPath>E:\Program Files\Java\jdk1.8.0_261\lib\tools.jar</systemPath>
  </dependency>
-	    
+	    <exclusions>
+            <exclusion>
+                <artifactId>tools</artifactId>
+                <groupId>com.sun</groupId>
+            </exclusion>
+        </exclusions>
     </dependencies>
   </dependencyManagement>
 
