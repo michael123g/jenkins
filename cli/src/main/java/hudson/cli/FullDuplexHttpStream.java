@@ -1,6 +1,6 @@
 package hudson.cli;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+//import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -94,7 +94,7 @@ public class FullDuplexHttpStream {
         LOGGER.fine("established upload side");
     }
 
-    @SuppressFBWarnings(value = "URLCONNECTION_SSRF_FD", justification = "Client-side code doesn't involve SSRF.")
+    //@SuppressFBWarnings(value = "URLCONNECTION_SSRF_FD", justification = "Client-side code doesn't involve SSRF.")
     private HttpURLConnection openHttpConnection(URL target) throws IOException {
         return (HttpURLConnection) target.openConnection();
     }
