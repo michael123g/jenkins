@@ -177,6 +177,14 @@ THE SOFTWARE.
         <scope>provided</scope>
         <optional>true</optional>
       </dependency>
+	     <dependency>
+   <groupId>com.sun</groupId>
+   <artifactId>tools</artifactId>
+   <version>1.6</version>
+   <scope>system</scope>
+   <systemPath>E:\Program Files\Java\jdk1.8.0_261\lib\tools.jar</systemPath>
+ </dependency>
+	    
     </dependencies>
   </dependencyManagement>
 
